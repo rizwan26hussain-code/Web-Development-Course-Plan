@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Store</title>
+
+<style>
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* TOP BAR */
+.top-bar {
+  background:black;
+  color:white;
+  text-align:center;
+  padding:8px;
+  font-size:14px;
+}
+
+/* NAVBAR */
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 10%;
+  border-bottom:1px solid #ddd;
+}
+
+.logo {
+  font-size:24px;
+  font-weight:bold;
+}
+
+.nav-links a {
+  margin:0 15px;
+  text-decoration:none;
+  color:black;
+}
+
+/* HERO */
+.hero img {
+  width:100%;
+  height:80vh;
+  object-fit:cover;
+}
+
+/* CATEGORIES */
+.categories {
+  display:flex;
+  gap:20px;
+  padding:50px 10%;
+}
+
+.category {
+  flex:1;
+  position:relative;
+}
+
+.category img {
+  width:100%;
+  height:300px;
+  object-fit:cover;
+}
+
+.category h2 {
+  position:absolute;
+  bottom:20px;
+  left:20px;
+  color:white;
+}
+
+/* PRODUCTS */
+.products {
+  padding:50px 10%;
+}
+
+.products h2 {
+  margin-bottom:20px;
+}
+
+.product-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.product {
+  text-align:center;
+}
+
+.product img {
+  width:100%;
+}
+
+.product p {
+  margin-top:10px;
+}
+
+/* FOOTER */
+.footer {
+  background:black;
+  color:white;
+  padding:40px 10%;
+  margin-top:50px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .categories {
+    flex-direction:column;
+  }
+
+  .product-grid {
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  Free Shipping Nationwide 🚚
+</div>
+
+<div class="navbar">
+  <div class="logo">YOUR BRAND</div>
+  <div class="nav-links">
+    <a href="#">Men</a>
+    <a href="#">Women</a>
+    <a href="#">Kids</a>
+    <a href="#">Sale</a>
+  </div>
+</div>
+
+<div class="hero">
+  <img src="Untitled-1_8b8ee694-b4de-4921-a7eb-7f74d276fc07.webp">
+</div>
+
+<div class="categories">
+  <div class="category">
+    <img src="Homepage_Banner_Girls_c62afc03-ce75-435c-ba04-6a6eda446485.webp">
+    <h2>Men</h2>
+  </div>
+  <div class="category">
+    <img src="fihh.webp">
+    <h2>Women</h2>
+  </div>
+  <div class="category">
+    <img src="dihh.webp">
+    <h2>Kids</h2>
+  </div>
+</div>
+
+<div class="products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="gahh.webp">
+      <p>Girls Yellow Pret
+      </p>
+      <p><i class="fa fa-italic" aria-hidden="true"><del>PKR 11,990</del></i>
+ PKR 9,592</p>
+    </div>
+    <div class="product">
+      <img src="fahh.webp">
+      <p>Unstitched Embroidered Silk Suit</p>
+      <p> <i class="fa fa-italic" aria-hidden="true"><del>PKR 13,990</del></i> 
+ PKR 11,193</p>
+    </div>
+    <div class="product">
+      <img src="tahh.webp">
+      <p>Unstitched Printed Lawn Shirt Trouser</p>
+      <p>PKR 2,500</p>
+    </div>
+    <div class="product">
+      <img src="lahh.webp">
+      <p>Men's Grey Shalwaar Kameez</p>
+      <p> <i class="fa fa-italic" aria-hidden="true"><del>PKR 10,990</del></i> 
+ PKR 8,793</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>© 2026 Your Brand</p>
+</div>
+
+</body>
+</html>
